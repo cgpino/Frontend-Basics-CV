@@ -3,7 +3,7 @@
 
 <head>
     <title>Contacto</title>
-
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/contact.css">
@@ -34,18 +34,18 @@
     <nav class="navbar">
         <ul class="navbar__list">
             <li class="navbar__item">
-                <a href="#">Inicio</a>
+                <a href="index.html">Inicio</a>
             </li>
             <li class="navbar__item ">
-                <a href="#">Quien soy</a>
+                <a href="index.html#quien-soy">Quien soy</a>
             </li>
             <li class="navbar__item ">
-                <a href="#">Equipo</a>
+                <a href="index.html#equipo">Equipo</a>
             </li>
             <li class="navbar__item ">
-                <a href="#">Transporte</a>
+                <a href="index.html#transporte">Transporte</a>
             </li>
-            <li class="navbar__item navbar__item--active">
+            <li class="navbar__item  navbar__item--active">
                 <a href="#">Contacto</a>
             </li>
             <li class="navbar__item ">
@@ -64,15 +64,14 @@
                 </div>
                 <div class="col-6">
                     <div class="form">
-                        <form name="contacto" method="get">
+                        <form name="contacto" method="get" novalidate>
                             <div class="form-row">
                                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
 
                                 <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
                             </div>
                             <div class="form-row">
-                                <input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+"
-                                    required>
+                                <input type="text" id="email" name="email" placeholder="name@company.com">
                             </div>
                             <div class="form-row">
                                 <label for="tipo_mision_1">Recate</label>
@@ -135,6 +134,11 @@
     <footer class="footer row-flex">
         Sergio Fernández &copy; 2017 KeepCoding
     </footer>
+
+    <script src="./scripts/notifications.js"></script>
+    <script src="./scripts/form.js"></script>
+
+    <script src="./scripts/ajax.js"></script>
 </body>
 
 </html>
