@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   --main-text-color: #f7f7f7;
-  --secondary-text-color: #a4a4a4;
+  --secondary-text-color: #535353;;
 }
 
 .clearfix:after {
@@ -29,13 +29,13 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--main-text-color);
+  background-color:  rgba(22, 22, 22, 0.9);
   z-index: 1;
   height: 50px;
 }
 
 .navbar > .navbar__list {
-  float: right;
+  float: left;
   list-style-type: none;
   margin: 0;
   font-size: 0;
@@ -51,7 +51,7 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 20px;
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--main-text-color);
   height: 50px;
   transition: all 0.5s linear;
 }
