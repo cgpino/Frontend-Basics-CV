@@ -1,6 +1,11 @@
 @font-face {
-  src: url("../fonts/batmfo__.ttf");
-  font-family: batman;
+  src: url("../fonts/emulogic.ttf");
+  font-family: navbarFont;
+}
+
+@font-face {
+  src: url("../fonts/PreschoolBits.ttf");
+  font-family: titleFont;
 }
 
 * {
@@ -14,7 +19,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   --main-text-color: #f7f7f7;
-  --secondary-text-color: #535353;;
+  --secondary-text-color: #3e4145;;
 }
 
 .clearfix:after {
@@ -29,7 +34,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color:  rgba(22, 22, 22, 0.9);
+  background-color:  rgba(37, 41, 48, 0.9);
   z-index: 1;
   height: 50px;
 }
@@ -52,6 +57,8 @@ body {
   text-decoration: none;
   padding: 20px;
   color: var(--main-text-color);
+  font-family: navbarFont;
+  font-size: 0.7rem;
   height: 50px;
   transition: all 0.5s linear;
 }
@@ -71,10 +78,10 @@ body {
 .header > .header__title {
   position: absolute;
   left: 0;
-  top: 65%;
+  top: 40%;
   width: 100%;
   color: white;
-  font-family: batman;
+  font-family: titleFont;
   text-align: center;
   font-size: 6rem;
   visibility: hidden;
@@ -84,11 +91,11 @@ body {
 
 .header > .header__cite {
   position: absolute;
-  top: 60%;
+  top: 55%;
   width: 100%;
   color: white;
-  font-size: 1.6rem;
-  font-family: batman;
+  font-size: 2rem;
+  font-family: titleFont;
   text-align: center;
   opacity: 0;
   animation: subtitleAnimation 3s forwards;
