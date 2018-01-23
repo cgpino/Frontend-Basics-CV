@@ -2,7 +2,8 @@
 <html lang="es">
 
 <head>
-    <title>Carlos Gómez Pino</title>
+    <meta charset="UTF-8">
+    <title>Carlos G&oacute;mez Pino</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -24,10 +25,10 @@
                 <a href="#experiencia">Experiencia</a>
             </li>
             <li class="navbar__item ">
-                <a href="contact.html">Contacto</a>
+                <a href="#">Video</a>
             </li>
             <li class="navbar__item ">
-                <a href="#">Sobre mi</a>
+                <a href="contact.html">Contacto</a>
             </li>
         </ul>
     </nav>
@@ -41,7 +42,47 @@
 
     <main class="container">
         <section id="quien-soy" class="section-container">
-            <div class="about-me clearfix">
+            <h2 class="quien-soy__title">¿QUIÉN SOY?</h2>
+            <div class="row-flex">
+                <div class="flex__item">
+                    <h3>
+                        Sobre mi:
+                    </h3>
+                    <p class="flex-item__description">
+                        Soy ingeniero informático con especialidad en ciencias de la computación.
+                    </p>
+                    <p class="flex-item__description">
+                        Me gusta mucho programar y aprender acerca de nuevas tecnologías que tengan que ver con el mundo de la informática y la programación en general.
+                    </p>
+                </div>
+                <div class="flex__item">
+                    <figure>
+                        <img class="flex-item__image" src="./images/profile-photo.jpg" alt="Perfil">
+                    </figure>
+                </div>
+                <div class="flex__item">
+                        <h3>
+                            Nombre:
+                        </h3>
+                        <p class="flex-item__description">
+                            Carlos Gómez Pino
+                        </p>
+                        <h3>
+                            Fecha de nacimiento:
+                        </h3>
+                        <p class="flex-item__description">
+                            11/11/94
+                        </p>
+                        <h3>
+                            Localización:
+                        </h3>
+                        <p class="flex-item__description">
+                            Córdoba, España
+                        </p>
+                </div>
+            </div>
+
+            <!--<div class="about-me clearfix">
                 <div class="about-me__video">
                     <video id="video" width="550" height="300" controls>
                         <source src="./video/batman.mp4" type="video/mp4">
@@ -55,11 +96,46 @@
                         maxime.
                     </span>
                 </div>
-            </div>
+            </div>-->
         </section>
 
         <section id="estudios" class="section-container">
-            <div class="row">
+            <h2 class="estudios__title">ESTUDIOS</h2>
+            <div class="row-flex">
+                <div class="flex__item">
+                    <h2>
+                        Educación:
+                    </h2>
+                    <ul class="estudios__list">
+                        <li class="estudios__item">
+                            <p>Web Startup Engineering Bootcamp</p>
+                            <p class="flex-item__description">KeepCoding, 2017 - (En curso)</p>
+                        </li>
+                        <br>
+                        <li class="estudios__item">
+                            <p>Grado en Ingeniería Informática</p>
+                            <p class="flex-item__description">Universidad de Córdoba, 2013 - 2017</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex__item">
+                    <h2>
+                        Cursos:
+                    </h2>
+                    <ul class="estudios__list">
+                        <li class="estudios__item">
+                            <p>Trinity ISE I (B1 Inglés)</p>
+                            <p class="flex-item__description">Trinity College, 2016</p>
+                        </li>
+                        <br>
+                        <li class="estudios__item">
+                            <p>Cisco Certified Network Associate I</p>
+                            <p class="flex-item__description">Universidad de Córdoba, 2016</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--<div class="row">
                 <div class="col-4">
                     <article class="team-member">
                         <header>
@@ -129,7 +205,7 @@
                         </p>
                     </article>
                 </div>
-            </div>
+            </div>-->
         </section>
 
         <section id="experiencia" class="transport">
@@ -157,7 +233,7 @@
     </main>
 
     <footer class="footer row-flex">
-        Sergio Fernández &copy; 2017 KeepCoding
+        Carlos Gómez Pino &copy; 2018
     </footer>
     <script src="./scripts/animation.js"></script>
     <script src="./scripts/menu.js"></script>

@@ -13,7 +13,7 @@ body {
 }
 
 section:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.92);
+  background: linear-gradient(to bottom right, rgb(42, 45, 49), rgb(0, 0, 0));
   color: var(--main-text-color);
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -23,6 +23,36 @@ section:nth-child(even) > div {
   width: 100%;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+section:nth-child(2n+1) {
+  background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(129, 129, 129));
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+section:nth-child(2n+1) > div {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.row-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-family: textFont
+}
+
+.flex__item > .flex-item__description {
+  font-size: 0.8rem;
 }
 
 .row:before,
@@ -81,7 +111,7 @@ section:nth-child(even) > div {
   width: calc(calc(100% / var(--grid-size)) * 12);
 }
 
-.row-flex {
+/*.row-flex {
   display: flex;
   flex-flow: row wrap;
 }
@@ -96,4 +126,4 @@ section:nth-child(even) > div {
 
 .transport-item > .transport-item__info {
   align-self: flex-end;
-}
+}*/
