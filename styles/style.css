@@ -125,6 +125,16 @@ body {
   background-size: 115% 115%;
 }
 
+.presentacion__title {
+  font-size: 2rem;
+  font-family: textFont;
+  text-align: center;
+}
+
+.presentacion__video {
+  text-align: center;
+}
+
 .quien-soy__title {
   font-size: 2rem;
   font-family: textFont;
@@ -138,6 +148,12 @@ body {
  }
 
  .estudios__title {
+  font-size: 2rem;
+  font-family: textFont;
+  text-align: center;
+}
+
+.experiencia__title {
   font-size: 2rem;
   font-family: textFont;
   text-align: center;
@@ -189,11 +205,13 @@ body {
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgb(37, 41, 48);
   color: var(--main-text-color);
   height: 50px;
   align-items: center;
   justify-content: center;
+  font-family: navbarFont;
+  font-size: 0.8rem;
 }
 
 @keyframes titleAnimation {

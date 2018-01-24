@@ -16,6 +16,9 @@
                 <a href="#">Inicio</a>
             </li>
             <li class="navbar__item ">
+                <a href="#presentacion">Presentacion</a>
+            </li>
+            <li class="navbar__item ">
                 <a href="#quien-soy">Quien soy</a>
             </li>
             <li class="navbar__item ">
@@ -23,9 +26,6 @@
             </li>
             <li class="navbar__item ">
                 <a href="#experiencia">Experiencia</a>
-            </li>
-            <li class="navbar__item ">
-                <a href="#">Video</a>
             </li>
             <li class="navbar__item ">
                 <a href="contact.html">Contacto</a>
@@ -41,6 +41,25 @@
     </header>
 
     <main class="container">
+
+        <section id="presentacion" class="section-container">
+            <h2 class="presentacion__title">PRESENTACIÓN</h2>
+            <div class="presentacion__video">
+                <div class="row-flex">
+                    <div class="flex__item">
+                        <video id="video" width="550" height="300" controls>
+                            <source src="./video/hackingTime.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="flex__item">
+                        <h3>"IT'S HACKING TIME!"</h3>
+                        <p class="flex-item__description">YOU'RE ABOUT TO HACK TIME, ARE YOU SURE?</p>
+                        <p class="flex-item__description"> >YES &nbsp; NO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="quien-soy" class="section-container">
             <h2 class="quien-soy__title">¿QUIÉN SOY?</h2>
             <div class="row-flex">
@@ -58,6 +77,14 @@
                 <div class="flex__item">
                     <figure>
                         <img class="flex-item__image" src="./images/profile-photo.jpg" alt="Perfil">
+                        <!--<div class="flip">
+                            <div class="flip__img flip__img--front">
+                                <img class="flex-item__image" src="./images/profile-photo.jpg" alt="Perfil">
+                            </div>
+                            <div class="flip__img flip__img--back">
+                                <img class="flex-item__image" src="./images/profile-photo-young.jpg" alt="Perfil">
+                            </div>
+                        </div>-->
                     </figure>
                 </div>
                 <div class="flex__item">
@@ -81,22 +108,6 @@
                         </p>
                 </div>
             </div>
-
-            <!--<div class="about-me clearfix">
-                <div class="about-me__video">
-                    <video id="video" width="550" height="300" controls>
-                        <source src="./video/batman.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="about-me__info">
-                    <h2>Quien soy</h2>
-                    Batman:
-                    <span class="about-me__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sint eligendi in, velit distinctio, natus,
-                        eius quae praesentium optio ex consectetur iste fugit harum odit? Soluta laborum aspernatur asperiores
-                        maxime.
-                    </span>
-                </div>
-            </div>-->
         </section>
 
         <section id="estudios" class="section-container">
@@ -208,8 +219,21 @@
             </div>-->
         </section>
 
-        <section id="experiencia" class="transport">
+        <section id="experiencia" class="section-container">
+            <h2 class="experiencia__title">EXPERIENCIA</h2>
             <div class="row-flex">
+                <div class="flex__item">
+                    <ul class="experiencia__list">
+                        <li class="experiencia__item">
+                            <h3>Ingenierio informático en Ayuntamiento de Montilla (Córdoba)</h3>
+                            <p class="flex-item__description">Proyectos de Smart Cities para la ciudad y técnico de sistema informáticos, 2017 - (En curso)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--<div class="row-flex">
                 <div class="transport-item">
                     <figure>
                         <img class="transport-item__image" src="./images/car.jpg" alt="Coche">
@@ -228,12 +252,12 @@
                         <time datetime="2005">2005</time> y se uso durante toda la trilogía.
                     </p>
                 </div>
-            </div>
+            </div>-->
         </section>
     </main>
 
     <footer class="footer row-flex">
-        Carlos Gómez Pino &copy; 2018
+        Carlos Gomez Pino &copy; 2018
     </footer>
     <script src="./scripts/animation.js"></script>
     <script src="./scripts/menu.js"></script>
