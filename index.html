@@ -6,6 +6,7 @@
     <title>Carlos G&oacute;mez Pino</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
@@ -28,14 +29,13 @@
                 <a href="#experiencia">Experiencia</a>
             </li>
             <li class="navbar__item ">
-                <a href="contact.html">Contacto</a>
+                <a href="#contacto">Contacto</a>
             </li>
         </ul>
     </nav>
 
     <header class="header">
         <h1 class="header__title">Carlos Gomez Pino</h1>
-        <!--<img class="header__image" src="./images/batman.jpg" alt="Foto de Batman">-->
         <div class="header__image"></div>
         <p class="header__cite">"Failure doesn't mean the GAME OVER, it means try again with EXPERIENCE"</p>
     </header>
@@ -64,15 +64,14 @@
             <h2 class="quien-soy__title">¿QUIÉN SOY?</h2>
             <div class="row-flex">
                 <div class="flex__item">
-                    <h3>
-                        Sobre mi:
-                    </h3>
-                    <p class="flex-item__description">
-                        Soy ingeniero informático con especialidad en ciencias de la computación.
-                    </p>
-                    <p class="flex-item__description">
-                        Me gusta mucho programar y aprender acerca de nuevas tecnologías que tengan que ver con el mundo de la informática y la programación en general.
-                    </p>
+                    <h3>Sobre mi:</h3>
+                    <p class="flex-item__description">Soy ingeniero informático con especialidad en ciencias de la computación.</p>
+                    <p class="flex-item__description">Me gusta mucho programar y aprender acerca de nuevas tecnologías que tengan que ver con el mundo de la programación y la informática en general.</p>
+                    <div class="row-flex">
+                        <div class="flex__item"><a href="https://github.com/cgpino"><img class="flex-item__social" src="./images/github-button.png" alt="Github"></a></div>
+                        <div class="flex__item"><a href="https://twitter.com/cgomez_34"><img class="flex-item__social" src="./images/twitter-button.png" alt="Twitter"></a></div>
+                        <div class="flex__item"><a href="https://www.linkedin.com/in/carlos-g%C3%B3mez-pino-169b37154/"><img class="flex-item__social" src="./images/linkedin-button.png" alt="Linkedin"></a></div>
+                    </div>
                 </div>
                 <div class="flex__item">
                     <figure>
@@ -88,24 +87,12 @@
                     </figure>
                 </div>
                 <div class="flex__item">
-                        <h3>
-                            Nombre:
-                        </h3>
-                        <p class="flex-item__description">
-                            Carlos Gómez Pino
-                        </p>
-                        <h3>
-                            Fecha de nacimiento:
-                        </h3>
-                        <p class="flex-item__description">
-                            11/11/94
-                        </p>
-                        <h3>
-                            Localización:
-                        </h3>
-                        <p class="flex-item__description">
-                            Córdoba, España
-                        </p>
+                    <h3>Nombre:</h3>
+                    <p class="flex-item__description">Carlos Gómez Pino</p>
+                    <h3>Fecha de nacimiento:</h3>
+                    <p class="flex-item__description">11/11/94</p>
+                    <h3>Localización:</h3>
+                    <p class="flex-item__description">Córdoba, España</p>
                 </div>
             </div>
         </section>
@@ -114,9 +101,7 @@
             <h2 class="estudios__title">ESTUDIOS</h2>
             <div class="row-flex">
                 <div class="flex__item">
-                    <h2>
-                        Educación:
-                    </h2>
+                    <h2>Educación:</h2>
                     <ul class="estudios__list">
                         <li class="estudios__item">
                             <p>Web Startup Engineering Bootcamp</p>
@@ -130,9 +115,7 @@
                     </ul>
                 </div>
                 <div class="flex__item">
-                    <h2>
-                        Cursos:
-                    </h2>
+                    <h2>Cursos:</h2>
                     <ul class="estudios__list">
                         <li class="estudios__item">
                             <p>Trinity ISE I (B1 Inglés)</p>
@@ -231,27 +214,86 @@
                     </ul>
                 </div>
             </div>
+        </section>
 
+        <section id="contacto" class="section-container">
+            <h2 class="contacto__title">CONTACTO</h2>
+            <div class="row-flex">
+                <div class="flex__item">
+                    <form name="contacto" method="get" novalidate>
+                        <ul class="contacto__list">
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Nombre y apellidos:
+                                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Correo electrónico:
+                                        <input type="text" id="email" name="email" placeholder="ej: ejemplo@empresa.com">
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Nº de teléfono:
+                                        <input type="text" id="telefono" name="telefono" placeholder="ej: +34 123456789">
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        ¿Cómo me has conocido?:
+                                        <p class="flex-item__flex-item__choices">
+                                            <label for="tipo_conocido_1">Búsqueda en internet</label>
+                                            <input type="radio" id="tipo_conocido_1" name="tipo_conocido" value="internet" required>
+                                            &nbsp;
+                                            <label for="tipo_conocido_2">Conocido común</label>
+                                            <input type="radio" id="tipo_conocido_1" name="tipo_conocido" value="conocido" required>
+                                            &nbsp;
+                                            <label for="tipo_conocido_3">Otro</label>
+                                            <input type="radio" id="tipo_conocido_3" name="tipo_conocido" value="otro" required>
+                                        </p>
+                                        <div id="tipo_conocido_otro">
+                                            <textarea name="tipo_conocido_otro_mensaje" id="tipo_conocido_otro_mensaje" placeholder="¿Cómo me has conocido?" disabled="disabled"></textarea>
+                                        </div>
+                                    </p>
+                                </div>
+                            </li>
+                            <br>
+                            <li class="contacto__item">
+                                <div class="form-row">
+                                    <p class="flex-item__description">
+                                        Mensaje:
+                                        <div id="contacto_mensaje_detalle">
+                                            <textarea name="contacto_mensaje" id="contacto_mensaje" placeholder="Escribe aquí tu mensaje"></textarea>
+                                        </div>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-            <!--<div class="row-flex">
-                <div class="transport-item">
-                    <figure>
-                        <img class="transport-item__image" src="./images/car.jpg" alt="Coche">
-                        <figcaption>Coche de Batman</figcaption>
-                    </figure>
-                    <p class="transport-item__info">Fabricado en el año
-                        <time datetime="2005">2005</time> y se uso durante toda la trilogía.</p>
-                </div>
-                <div class="transport-item">
-                    <figure>
-                        <img class="transport-item__image" src="./images/moto.jpg" alt="Moto">
-                        <figcaption>Moto de Batman</figcaption>
-                    </figure>
-                    <p class="transport-item__info">
-                        Fabricado en el año
-                        <time datetime="2005">2005</time> y se uso durante toda la trilogía.
-                    </p>
-                </div>
+            <!--<div class="form">
+                <form name="contacto" method="get" novalidate>
+                    <div class="form-row">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                    </div>
+                </form>
             </div>-->
         </section>
     </main>
@@ -259,9 +301,13 @@
     <footer class="footer row-flex">
         Carlos Gomez Pino &copy; 2018
     </footer>
+
     <script src="./scripts/animation.js"></script>
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/full-screen.js"></script>
+
+    <script src="./scripts/notifications.js"></script>
+    <script src="./scripts/form.js"></script>
 </body>
 
 </html>

@@ -29,7 +29,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   --main-text-color: #f7f7f7;
-  --secondary-text-color: #3e4145;;
+  --secondary-text-color: #505153;;
 }
 
 .clearfix:after {
@@ -141,12 +141,6 @@ body {
   text-align: center;
 }
 
-.flex__item .flex-item__image {
-  max-width: 100%;
-  height: 250px;
-  border-radius: 50%;
- }
-
  .estudios__title {
   font-size: 2rem;
   font-family: textFont;
@@ -159,16 +153,23 @@ body {
   text-align: center;
 }
 
-.about-me > .about-me__video {
-  float: left;
-  max-width: 50%;
+.contacto__title {
+  font-size: 2rem;
+  font-family: textFont;
+  text-align: center;
 }
 
-.about-me > .about-me__info {
-  font-family: navbarFont;
-  float: right;
-  max-width: 50%;
-}
+.flex__item .flex-item__image {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 50%;
+ }
+
+ .flex__item .flex-item__social {
+  max-width: 100%;
+  height: 50px;
+  border-radius: 50%;
+ }
 
 .team-member > .team-member__photo img {
   height: 300px;

@@ -59,9 +59,11 @@ var acumulativeOffset = function(element) {
   return top - 50;
 };
 
+var presentacionOffset = acumulativeOffset(document.getElementById("presentacion"));
 var quienSoyOffset = acumulativeOffset(document.getElementById("quien-soy"));
-var equipoOffset = acumulativeOffset(document.getElementById("equipo"));
-var transporteOffset = acumulativeOffset(document.getElementById("transporte"));
+var estudiosOffset = acumulativeOffset(document.getElementById("estudios"));
+var experienciaOffset = acumulativeOffset(document.getElementById("experiencia"));
+var contactoOffset = acumulativeOffset(document.getElementById("contacto"));
 
 window.addEventListener("scroll", changeMenuStyle);
 
@@ -70,6 +72,55 @@ var previous;
 function changeMenuStyle(event) {
   var pageOffset = window.pageYOffset;
 
+  if (pageOffset >= 0 && pageOffset < presentacionOffset) {
+    if (!previous || previous !== 1) {
+      previous = 1;
+    } else {
+      return false;
+    }
+    deleteActiveClass();
+    setActiveItem("a[href='#']");
+
+  } else if (pageOffset >= presentacionOffset && pageOffset < quienSoyOffset) {
+    if (!previous || previous !== 2) {
+      previous = 2;
+    } else {
+      return false;
+    }
+    deleteActiveClass();
+    setActiveItem("a[href$='presentacion']");
+
+  } else if (pageYOffset >= quienSoyOffset && pageYOffset < estudiosOffset) {
+    if (!previous || previous !== 3) {
+      previous = 3;
+    } else {
+      return false;
+    }
+    deleteActiveClass();
+    setActiveItem("a[href$='quien-soy']");
+
+  } else if (pageYOffset >= estudiosOffset && pageYOffset < experienciaOffset) {
+    if (!previous || previous !== 4) {
+      previous = 4;
+    } else {
+      return false;
+    }
+    deleteActiveClass();
+    setActiveItem("a[href$='estudios']");
+    
+  } else if (pageYOffset >= experienciaOffset && pageYOffset < contactoOffset) {
+    if (!previous || previous !== 5) {
+      previous = 5;
+    } else {
+      return false;
+    }
+    deleteActiveClass();
+    setActiveItem("a[href$='experiencia']");
+    
+  }
+
+
+  /*
   if (pageOffset >= 0 && pageOffset < quienSoyOffset) {
     if (!previous || previous !== 1) {
       previous = 1;
@@ -98,6 +149,7 @@ function changeMenuStyle(event) {
     deleteActiveClass();
     setActiveItem("a[href$='equipo']");
   }
+  */
 }
 
 function setActiveItem(selector) {
