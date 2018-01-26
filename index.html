@@ -90,7 +90,7 @@
                     <h3>Nombre:</h3>
                     <p class="flex-item__description">Carlos Gómez Pino</p>
                     <h3>Fecha de nacimiento:</h3>
-                    <p class="flex-item__description">11/11/94</p>
+                    <p class="flex-item__description">11/11/1994</p>
                     <h3>Localización:</h3>
                     <p class="flex-item__description">Córdoba, España</p>
                 </div>
@@ -220,6 +220,7 @@
             <h2 class="contacto__title">CONTACTO</h2>
             <div class="row-flex">
                 <div class="flex__item">
+                    <div class="contact_section">
                     <form name="contacto" method="get" novalidate>
                         <ul class="contacto__list">
                             <li class="contacto__item">
@@ -265,7 +266,7 @@
                                             <input type="radio" id="tipo_conocido_3" name="tipo_conocido" value="otro" required>
                                         </p>
                                         <div id="tipo_conocido_otro">
-                                            <textarea name="tipo_conocido_otro_mensaje" id="tipo_conocido_otro_mensaje" placeholder="¿Cómo me has conocido?" disabled="disabled"></textarea>
+                                            <textarea rows="4" cols="90" name="tipo_conocido_otro_mensaje" id="tipo_conocido_otro_mensaje" placeholder="¿Cómo me has conocido?" disabled="disabled"></textarea>
                                         </div>
                                     </p>
                                 </div>
@@ -276,13 +277,18 @@
                                     <p class="flex-item__description">
                                         Mensaje:
                                         <div id="contacto_mensaje_detalle">
-                                            <textarea name="contacto_mensaje" id="contacto_mensaje" placeholder="Escribe aquí tu mensaje"></textarea>
+                                            <textarea rows="4" cols="90" name="contacto_mensaje" id="contacto_mensaje" placeholder="Escribe aquí tu mensaje"></textarea>
                                         </div>
                                     </p>
                                 </div>
                             </li>
+                            <br>
+                            <div class="form-row">
+                                <button type="submit" id="enviar">Enviar</button>
+                            </div>
                         </ul>
                     </form>
+                    </div>
                 </div>
             </div>
         </section>

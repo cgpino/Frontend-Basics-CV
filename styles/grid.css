@@ -37,6 +37,15 @@ section:nth-child(2n+1) > div {
   max-width: 1200px;
 }
 
+.contact_section {
+  background: linear-gradient(to bottom right, rgb(42, 45, 49), rgb(0, 0, 0));
+  outline-style: dashed;
+  color: var(--main-text-color);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  font-size: 0.8rem;
+}
+
 .row-flex {
   display: flex;
   flex-flow: row wrap;
