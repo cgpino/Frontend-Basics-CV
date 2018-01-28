@@ -121,10 +121,6 @@ body {
   transition: background-size 0.5s;
 }
 
-.header > .header__image:hover {
-  background-size: 115% 115%;
-}
-
 .presentacion__title {
   font-size: 2rem;
   font-family: textFont;
@@ -170,35 +166,6 @@ body {
   height: 50px;
   border-radius: 50%;
  }
-
-.team-member > .team-member__photo img {
-  height: 300px;
-  max-width: 100%;
-  border-radius: 50%;
-}
-
-.flip {
-  height: 305px;
-  position: relative;
-}
-
-.flip > .flip__img {
-  position: absolute;
-  backface-visibility: hidden;
-  transition: transform 1s;
-}
-
-.flip__img--back {
-  transform: rotateY(-180deg);
-}
-
-.flip:hover .flip__img--front {
-  transform: rotateY(-180deg);
-}
-
-.flip:hover .flip__img--back {
-  transform: rotateY(0);
-}
 
 .footer {
   background-color: rgb(37, 41, 48);
