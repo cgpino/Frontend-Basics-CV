@@ -14,6 +14,7 @@ var conocidoInput = {
 
 var conocidoOtroMensajeInput = document.getElementById("tipo_conocido_otro_mensaje");
 var mensajeInput = document.getElementById("contacto_mensaje");
+var submitButton = document.getElementById("enviar");
 
 /* Función de inicio */
 function start() {

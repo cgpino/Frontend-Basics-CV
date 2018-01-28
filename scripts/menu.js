@@ -117,39 +117,16 @@ function changeMenuStyle(event) {
     deleteActiveClass();
     setActiveItem("a[href$='experiencia']");
     
+  } else if (pageYOffset >= contactoOffset) {
+    if (!previous || previous !== 6) {
+      previous = 6;
+    } else {
+      return false;
+    }
+    deleteActiveClass();
+    setActiveItem("a[href$='contacto']");
+    
   }
-
-
-  /*
-  if (pageOffset >= 0 && pageOffset < quienSoyOffset) {
-    if (!previous || previous !== 1) {
-      previous = 1;
-    } else {
-      return false;
-    }
-
-    deleteActiveClass();
-    setActiveItem("a[href='#']");
-  } else if (pageOffset >= quienSoyOffset && pageOffset < equipoOffset) {
-    if (!previous || previous !== 2) {
-      previous = 2;
-    } else {
-      return false;
-    }
-
-    deleteActiveClass();
-    setActiveItem("a[href$='quien-soy']");
-  } else if (pageYOffset >= equipoOffset && pageYOffset < transporteOffset) {
-    if (!previous || previous !== 3) {
-      previous = 3;
-    } else {
-      return false;
-    }
-
-    deleteActiveClass();
-    setActiveItem("a[href$='equipo']");
-  }
-  */
 }
 
 function setActiveItem(selector) {
