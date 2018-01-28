@@ -39,11 +39,43 @@ section:nth-child(2n+1) > div {
 
 .contact_section {
   background: linear-gradient(to bottom right, rgb(42, 45, 49), rgb(0, 0, 0));
-  outline-style: dashed;
+  outline-style: groove;
   color: var(--main-text-color);
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   font-size: 0.8rem;
+}
+
+#googleMap {
+  width: 400px;
+  height: 500px;
+  background: rgb(42, 45, 49);
+  outline-style: groove;
+}
+.form {
+  padding: 0 1.2rem;
+}
+
+.form .form-row {
+  padding: 0.8rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #2d2c66;
+  padding: 1rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
 }
 
 .row-flex {
