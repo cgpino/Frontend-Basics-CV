@@ -86,7 +86,7 @@ form.addEventListener("submit", function(event) {
     return false;
   }
 
-  if (mensajeInput.value.split(" ").length > 5) {
+  if (mensajeInput.value.split(" ").length > 150) {
     alert("El mensaje no puede contener más de 150 palabras");
     mensajeInput.focus();
     event.preventDefault();
